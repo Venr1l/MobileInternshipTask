@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RepoDetailsActivity">
+
+    <TextView
+        android:id="@+id/details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Name:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/details_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/details_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/details_name" />
+
+    <TextView
+        android:id="@+id/details_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description:"
+        app:layout_constraintStart_toStartOf="@+id/details_name"
+        app:layout_constraintTop_toBottomOf="@+id/details_name_value" />
+
+    <TextView
+        android:id="@+id/details_description_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/details_description_text"
+        app:layout_constraintStart_toEndOf="@+id/details_description_text" />
+
+    <TextView
+        android:id="@+id/details_language_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Language:"
+        app:layout_constraintStart_toStartOf="@+id/details_description_text"
+        app:layout_constraintTop_toBottomOf="@+id/details_description_value" />
+
+    <TextView
+        android:id="@+id/details_language_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/details_language_text"
+        app:layout_constraintStart_toEndOf="@+id/details_language_text" />
+
+    <TextView
+        android:id="@+id/details_forks_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Forks:"
+        app:layout_constraintStart_toStartOf="@+id/details_language_text"
+        app:layout_constraintTop_toBottomOf="@+id/details_language_value" />
+
+    <TextView
+        android:id="@+id/details_forks_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/details_forks_text"
+        app:layout_constraintStart_toEndOf="@+id/details_forks_text" />
+
+    <TextView
+        android:id="@+id/details_watchers_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Watchers:"
+        app:layout_constraintStart_toStartOf="@+id/details_forks_text"
+        app:layout_constraintTop_toBottomOf="@+id/details_forks_value" />
+
+    <TextView
+        android:id="@+id/details_watchers_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/details_watchers_text"
+        app:layout_constraintStart_toEndOf="@+id/details_watchers_text" />
+</android.support.constraint.ConstraintLayout>
