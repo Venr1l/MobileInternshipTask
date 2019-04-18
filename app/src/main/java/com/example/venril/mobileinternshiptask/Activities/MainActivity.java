@@ -14,23 +14,15 @@ import com.example.venril.mobileinternshiptask.ApiData.UserApiService;
 import com.example.venril.mobileinternshiptask.ApiData.UserModel;
 import com.example.venril.mobileinternshiptask.Events.UserInfoEvent;
 import com.example.venril.mobileinternshiptask.R;
-import com.google.gson.GsonBuilder;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-
-    public static final String BASE_URL = "https://api.github.com/";
-//    public static final String API_TOKEN = "f6d309d7c6ec380409a0598a2e677c2f84080708";
-    private static Retrofit retrofit = null;
 
     private EditText usernameEditText;
     private Button searchButton;
